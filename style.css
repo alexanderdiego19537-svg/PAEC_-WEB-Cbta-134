@@ -1017,6 +1017,7 @@ a {
     position: relative;
     width: 50%;
     box-sizing: border-box;
+    z-index: 2;
 }
 
 .timeline-item:nth-child(odd) {
