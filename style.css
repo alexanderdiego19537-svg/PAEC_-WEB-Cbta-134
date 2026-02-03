@@ -1,4 +1,33 @@
-﻿/* Reset CSS y Variables - Paleta de colores */
+﻿/**
+ * =====================================================
+ * PAEC - PROGRAMA AULA-ESCUELA-COMUNIDAD
+ * ARCHIVO: style.css
+ * DESCRIPCIÓN: Hoja de estilos principal del sitio web
+ *              PAEC CBTa 134. Contiene todos los estilos
+ *              visuales, animaciones y responsividad.
+
+ * =====================================================
+ * 
+ * ÍNDICE DE SECCIONES:
+ * 1. Variables CSS (colores, fuentes, sombras)
+ * 2. Reset y estilos base
+ * 3. Encabezado y navegación
+ * 4. Sección Hero (presentación principal)
+ * 5. Secciones de contenido
+ * 6. Tarjetas de áreas y proyectos
+ * 7. Página de escuelas
+ * 8. Galería de imágenes
+ * 9. Pie de página (footer)
+ * 10. Animaciones y transiciones
+ * 11. Media queries (responsividad móvil)
+ * =====================================================
+ */
+
+/* =====================================================
+   SECCIÓN 1: VARIABLES CSS - Paleta de colores
+   Define los colores, fuentes y valores reutilizables
+   ===================================================== */
+/* Reset CSS y Variables - Paleta de colores */
 :root {
     /* Primarios (verdes) */
     --primary-color: #2E7D32;
@@ -707,8 +736,8 @@ a {
 ======================================== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
     margin-top: 50px;
 }
 
@@ -1399,8 +1428,10 @@ a {
     }
 
     /* Projects Grid */
+    /* Projects Grid - Tablet */
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 
     /* School Slider */
@@ -3104,7 +3135,7 @@ a {
 
 .areas-premium-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
@@ -3468,7 +3499,7 @@ a {
     }
 
     .contact-premium-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .footer-grid {
@@ -3703,6 +3734,13 @@ a {
     justify-content: center;
     font-size: 2rem;
     color: #999;
+}
+
+.gallery-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .project-info-card {

@@ -1,12 +1,21 @@
+<!--
+=====================================================
+PAEC - PROGRAMA AULA-ESCUELA-COMUNIDAD
+ARCHIVO: cetac.html
+DESCRIPCIÓN: Página del CETAC Xiloxoxtla con información
+             detallada, proyectos PAEC y datos de contacto.
+
+=====================================================
+-->
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CETAC - PAEC</title>
+    <title>CETAC Xiloxoxtla - PAEC</title>
     <meta name="description"
-        content="Conoce CETAC, Centro de Estudios Tecnológicos en Aguas Continentales del Programa PAEC.">
+        content="Conoce el CETAC, Centro de Estudios Tecnológicos en Aguas Continentales Xiloxoxtla del Programa PAEC.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -41,16 +50,22 @@
         <section class="school-hero school-hero-cetac">
             <div class="school-hero-bg"></div>
             <div class="container">
+                <a href="escuelas.html" class="back-link animate-up" style="margin-bottom: 20px; display: inline-flex;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Regresar a Escuelas
+                </a>
                 <div class="school-hero-content"
                     style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
                     <img src="images/logo_cetac.png" alt="Logo CETAC"
-                        style="width: 120px; height: 120px; border-radius: 50%; background: white; padding: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                        style="width: 130px; height: auto; background: white; padding: 15px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
                     <div>
-                        <span class="badge badge-extension">Extensión</span>
-                        <h1>CETAC</h1>
+                        <span class="badge badge-extension">Escuela Participante</span>
+                        <h1>CETAC Xiloxoxtla</h1>
                         <h2>Centro de Estudios Tecnológicos en Aguas Continentales</h2>
-                        <p>Especializado en proyectos relacionados con recursos hídricos y ecosistemas acuáticos de la
-                            región.</p>
+                        <p>Especializado en proyectos relacionados con recursos hídricos, acuacultura y
+                            laboratorio ambiental en la región de Tlaxcala.</p>
                     </div>
                 </div>
             </div>
@@ -63,12 +78,17 @@
                     <div class="school-main-info fade-in">
                         <h3>Sobre CETAC</h3>
                         <p>El <strong>Centro de Estudios Tecnológicos en Aguas Continentales (CETAC)</strong> es una
-                            extensión del CBTa 134 ubicada en las instalaciones de la Telesecundaria "Lic. Benito
-                            Juárez"
-                            en <strong>Santa Isabel Xiloxoxtla, Tlaxcala</strong>.</p>
+                            institución educativa ubicada en <strong>Santa Isabel Xiloxoxtla, Tlaxcala</strong>.</p>
 
                         <p>Ofrece <strong>Bachillerato Tecnológico</strong> con especialidades técnicas enfocadas en el
-                            manejo y conservación de recursos hídricos y ecosistemas acuáticos de la región.</p>
+                            manejo y conservación de recursos hídricos, acuacultura y análisis de laboratorio ambiental.
+                        </p>
+
+                        <p>Los estudiantes de CETAC participan activamente en el Programa
+                            Aula-Escuela-Comunidad, desarrollando proyectos que contribuyen a la
+                            <strong>conservación del medio ambiente</strong> y la <strong>sustentabilidad</strong>
+                            de su comunidad.
+                        </p>
 
                         <div class="highlight-box highlight-box-blue">
                             <h4>📍 Ubicación</h4>
@@ -90,31 +110,54 @@
                             </div>
                         </div>
 
-                        <div class="highlight-box" style="margin-top: 25px;">
-                            <h4>📞 Contacto</h4>
-                            <p><strong>Teléfono:</strong> 246 757 8039</p>
-                            <p><strong>Horario:</strong> Lunes a Viernes, 14:00 a 18:30 hrs</p>
-                            <p><strong>Turno:</strong> Vespertino</p>
+                        <div class="highlight-box highlight-box-green" style="margin-top: 20px;">
+                            <h4>📞 Contacto Oficial</h4>
+                            <div style="margin-top: 15px;">
+                                <p style="margin-bottom: 10px;">
+                                    <strong>📧 Email:</strong><br>
+                                    <a href="mailto:cetacxiloxoxtla.tlaxcala@dgetaycm.sems.gob.mx"
+                                        style="color: var(--primary-dark); font-size: 0.85rem;">cetacxiloxoxtla.tlaxcala@dgetaycm.sems.gob.mx</a>
+                                </p>
+                                <p style="margin-bottom: 10px;">
+                                    <strong>📞 Teléfono:</strong> 246 757 8039
+                                </p>
+                                <p style="margin-bottom: 10px;">
+                                    <strong>🕐 Horario:</strong> Lunes a Viernes, 14:00 a 18:30 hrs (Turno Vespertino)
+                                </p>
+                                <p style="margin-bottom: 15px;">
+                                    <strong>📍 Dirección:</strong><br>
+                                    Av. División del Norte S/N, esq. 24 de Junio,<br>
+                                    Colonia Contla, Santa Isabel Xiloxoxtla, Tlaxcala
+                                </p>
+                                <a href="https://www.facebook.com/cetac.tlaxcala.3/?locale=es_LA" target="_blank"
+                                    class="btn btn-primary" style="display: inline-block;">
+                                    📘 Facebook
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="school-image-container fade-in delay-1">
-                        <img src="images/cetac_flyer.png" alt="CETAC Xiloxoxtla - Información" class="school-image-real"
+                        <img src="images/cetac_stand.jpg" alt="Stand del CETAC - Inscripciones"
+                            style="width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 20px;">
+
+                        <img src="images/cetac_flyer.png" alt="Información CETAC Xiloxoxtla"
                             style="width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Proyecto Principal -->
+        <!-- Proyectos PAEC -->
         <section class="section bg-light">
             <div class="container">
                 <div class="section-header">
-                    <h3>Proyecto PAEC de CETAC</h3>
+                    <h3>Proyectos PAEC de CETAC</h3>
                     <p>Contribuyendo a la conservación del medio ambiente</p>
                 </div>
 
-                <div class="featured-project fade-in">
+                <!-- Proyecto 1: PET -->
+                <div class="featured-project fade-in" style="margin-bottom: 40px;">
                     <div class="featured-project-content">
                         <span class="project-badge">♻️ Proyecto Ambiental</span>
                         <h4>Colecta de PET para la Conservación del Medio Ambiente</h4>
@@ -128,8 +171,71 @@
                         </ul>
                     </div>
                     <div class="featured-project-image">
-                        <img src="images/cbta134_pet.jpg" alt="Colecta de PET - CETAC"
+                        <img src="images/cetac_limpieza.jpg" alt="Colecta de PET - CETAC"
                             style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; min-height: 300px;">
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Limpieza de Ecosistemas -->
+                <div class="featured-project fade-in">
+                    <div class="featured-project-content">
+                        <span class="project-badge">🌊 Proyecto de Conservación</span>
+                        <h4>Limpieza y Conservación de Ecosistemas Acuáticos</h4>
+                        <p>Estudiantes especializados en recursos hídricos participan en actividades de
+                            limpieza y recuperación de cuerpos de agua de la región.</p>
+                        <ul class="project-list">
+                            <li>Limpieza de canales y cuerpos de agua</li>
+                            <li>Monitoreo de calidad del agua</li>
+                            <li>Restauración de ecosistemas acuáticos</li>
+                            <li>Educación ambiental a la comunidad</li>
+                        </ul>
+                    </div>
+                    <div class="featured-project-image">
+                        <img src="images/cetac_trabajo.jpg" alt="Trabajo de limpieza ambiental - CETAC"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; min-height: 300px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de Fotos -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+                    <h3>Galería de Actividades</h3>
+                    <p>Nuestros estudiantes en acción</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div class="fade-in"
+                        style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <img src="images/cetac_visita.jpg" alt="Visita educativa CETAC"
+                            style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin-bottom: 5px; font-size: 1rem;">Visitas Educativas</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Estudiantes en actividades de
+                                aprendizaje fuera del aula</p>
+                        </div>
+                    </div>
+                    <div class="fade-in delay-1"
+                        style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <img src="images/cetac_limpieza.jpg" alt="Trabajo de campo - CETAC"
+                            style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin-bottom: 5px; font-size: 1rem;">Trabajo en Campo</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Recolección de residuos y limpieza
+                                ambiental</p>
+                        </div>
+                    </div>
+                    <div class="fade-in delay-2"
+                        style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <img src="images/cetac_trabajo.jpg" alt="Conservación de ecosistemas - CETAC"
+                            style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 15px; background: white;">
+                            <h4 style="margin-bottom: 5px; font-size: 1rem;">Conservación Ambiental</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Limpieza y restauración de
+                                ecosistemas acuáticos</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -165,7 +271,7 @@
                     <a href="ixtenco.html">Extensión Ixtenco</a> ·
                     <a href="cetac.html">CETAC</a>
                 </p>
-                <p style="font-size: 0.85rem; color: #888;">&copy; 2026 CBTa 134 - San Francisco Tetlanohcan, Tlaxcala.
+                <p style="font-size: 0.85rem; color: #888;">© 2026 CBTa 134 - San Francisco Tetlanohcan, Tlaxcala.
                 </p>
             </div>
         </div>

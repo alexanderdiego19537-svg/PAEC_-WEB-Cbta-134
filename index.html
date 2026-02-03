@@ -1,32 +1,57 @@
+<!--
+=====================================================
+PAEC - PROGRAMA AULA-ESCUELA-COMUNIDAD
+ARCHIVO: index.html
+DESCRIPCIÓN: Página principal del sitio web PAEC CBTa 134.
+             Contiene la presentación del programa, áreas de
+             trabajo, escuelas participantes e información
+             de contacto.
+
+=====================================================
+-->
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
+    <!-- Configuración de caracteres UTF-8 para acentos y ñ -->
     <meta charset="UTF-8">
+    <!-- Configuración para que el sitio sea responsivo en dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece en la pestaña del navegador -->
     <title>Programa Aula-Escuela-Comunidad (PAEC) - CBTa 134</title>
+    <!-- Descripción para motores de búsqueda (SEO) -->
     <meta name="description"
         content="Programa Aula-Escuela-Comunidad del CBTa 134 y sus extensiones. Integrando a los estudiantes en proyectos de impacto ambiental y comunitario.">
+    <!-- Enlace a la hoja de estilos principal -->
     <link rel="stylesheet" href="style.css">
+    <!-- Conexión anticipada a Google Fonts para mejor rendimiento -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente tipográfica Outfit de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <!-- =====================================================
+         ENCABEZADO PRINCIPAL - Navegación del sitio
+         Contiene el logo y el menú de navegación
+         ===================================================== -->
     <header class="header">
         <div class="container header-container">
+            <!-- Logo del sitio - enlaza a la página principal -->
             <div class="logo">
                 <a href="index.html">
                     <h1><span class="logo-abbr">PAEC</span> <span class="highlight">CBTa 134</span></h1>
                 </a>
             </div>
+            <!-- Botón hamburguesa para menú móvil (3 líneas) -->
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+            <!-- Menú de navegación principal -->
             <nav class="nav" id="nav">
                 <ul>
                     <li><a href="index.html" class="active">Inicio</a></li>
@@ -40,7 +65,10 @@
     </header>
 
     <main>
-        <!-- HERO SECTION - Premium Design -->
+        <!-- =====================================================
+             SECCIÓN HERO - Presentación principal del programa
+             Primera sección visible con estadísticas y botones
+             ===================================================== -->
         <section id="hero" class="hero-premium">
             <div class="hero-overlay"></div>
             <div class="hero-pattern"></div>
@@ -78,7 +106,7 @@
                         </div>
                         <div class="hero-stat-divider"></div>
                         <div class="hero-stat">
-                            <span class="hero-stat-number">12</span>
+                            <span class="hero-stat-number">11</span>
                             <span class="hero-stat-label">Áreas PAEC</span>
                         </div>
                     </div>
@@ -359,11 +387,29 @@
                         <p>Cultivo y preservación del conocimiento tradicional.</p>
                         <span class="area-card-slots">10 lugares</span>
                     </a>
+
+                    <a href="apicultura.html" class="area-premium-card fade-in delay-3"
+                        style="text-decoration: none; color: inherit;">
+                        <div class="area-card-icon">🐝</div>
+                        <div class="area-card-number">05</div>
+                        <h4>Apicultura</h4>
+                        <p>Cuidado de abejas y producción de miel para polinización.</p>
+                        <span class="area-card-slots">10 lugares</span>
+                    </a>
+
+                    <a href="reforestacion.html" class="area-premium-card fade-in delay-3"
+                        style="text-decoration: none; color: inherit;">
+                        <div class="area-card-icon">🌲</div>
+                        <div class="area-card-number">06</div>
+                        <h4>Reforestación</h4>
+                        <p>Plantación de árboles en áreas comunitarias.</p>
+                        <span class="area-card-slots">20 lugares</span>
+                    </a>
                 </div>
 
                 <div class="areas-cta fade-in">
                     <a href="proyectos.html" class="btn btn-primary btn-large">
-                        Explorar las 12 Áreas
+                        Explorar las 11 Áreas
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7" />
@@ -450,12 +496,20 @@
                     </div>
 
                     <div class="contact-premium-card fade-in delay-2">
-                        <div class="contact-card-icon">📧</div>
-                        <h4>Vinculación</h4>
-                        <p>Departamento de Vinculación</p>
-                        <span class="contact-info-text">Información del programa PAEC</span>
+                        <div class="contact-card-icon">💧</div>
+                        <h4>CETAC Xiloxoxtla</h4>
+                        <p>Sta. Isabel Xiloxoxtla, Tlaxcala</p>
+                        <a href="https://www.facebook.com/cetac.tlaxcala.3/?locale=es_LA" target="_blank"
+                            class="contact-social-btn facebook">
+                            Facebook
+                        </a>
+                        <a href="mailto:cetacxiloxoxtla.tlaxcala@dgetaycm.sems.gob.mx" class="contact-social-btn"
+                            style="background: #4CAF50; margin-top: 8px; font-size: 0.75rem;">
+                            <span>📧</span> cetacxiloxoxtla.tlaxcala@dgetaycm.sems.gob.mx
+                        </a>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
