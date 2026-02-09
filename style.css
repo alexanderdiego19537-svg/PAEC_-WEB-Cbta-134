@@ -3306,6 +3306,7 @@ a {
 .contact-social-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     background: #1877F2;
     color: white;
@@ -3313,6 +3314,8 @@ a {
     border-radius: 10px;
     font-weight: 600;
     transition: all 0.3s ease;
+    word-break: break-word;
+    max-width: 100%;
 }
 
 .contact-social-btn:hover {
@@ -3499,7 +3502,7 @@ a {
     }
 
     .contact-premium-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-grid {
@@ -4297,6 +4300,11 @@ a {
     .project-sidebar-col {
         width: 100% !important;
         max-width: 100% !important;
+    }
+
+    /* 12. Ocultar flecha de scroll en mÃ³vil */
+    .hero-scroll-indicator {
+        display: none !important;
     }
 }
 
