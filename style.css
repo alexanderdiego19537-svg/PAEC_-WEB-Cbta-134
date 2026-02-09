@@ -786,6 +786,7 @@ a {
     line-height: 1.4;
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin-bottom: auto;
@@ -3876,14 +3877,8 @@ a {
 
 /* VISIBILITY HOTFIX */
 /* Ensure content is not hidden if JS fails or delays */
-.fade-in,
-.animate-up,
-.slide-left {
-    /* opacity: 0; handled by JS */
-    /* Force visibility for now until reliable JS is confirmed */
-
-
-}
+/* VISIBILITY HOTFIX - Removed empty rule */
+/* .fade-in, .animate-up, .slide-left { } */
 
 /* Re-enable animations only if class 'visible' is present AND robust */
 .fade-in.visible {
